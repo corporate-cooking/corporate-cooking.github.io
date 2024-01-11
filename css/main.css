@@ -237,23 +237,23 @@ html, body {
 }
 
 
-#impr{
+.impr{
     background-color: #0a0a0a;
 }
 
-#impr > *{
+.impr > *{
     color: #fefefe;
     font-family: kica;
 }
-#klammer > p {
+.klammer > p {
     hyphenate-limit-chars: 60;
 }
-#klammer>h3{
+.klammer>h3{
     color: #fefefe;
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0;
 }
 
-#klammer{
+.klammer{
     padding: 20px;
 }
