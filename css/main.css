@@ -37,6 +37,7 @@ h6{
 }
 #start{
     background-color: #fefefe;
+    height: 98vh;
 }
 
 article{
@@ -118,7 +119,7 @@ html, body {
 #reservierbtn{
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
 
     font-family: kica;
     text-transform: uppercase;
