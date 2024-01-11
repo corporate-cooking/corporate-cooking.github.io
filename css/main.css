@@ -1,0 +1,237 @@
+@font-face {
+    font-family: kica;
+    src: url("../font/PERSONAL-USE-Kica-Light.ttf");
+}
+
+h1{
+    font-family: kica;
+    text-transform: uppercase;
+    font-weight:900;
+    font-size: 5vw;
+    color: black;
+    line-height: 0.5em;
+}
+#titel{
+    margin-top: 0px;
+    margin-left: 20px;
+}
+h3{
+    font-family: kica;
+    text-transform: uppercase;
+    font-weight:900;
+    font-size: 4vw;
+    color: black;
+    margin: 20px;
+    line-height: 1em;
+}
+h6{
+    font-family: kica;
+    text-transform: uppercase;
+    font-weight:900;
+    color: #fefefe;
+    font-size: 1vw;
+    mix-blend-mode: exclusion;
+}
+#menu > h6 {
+    margin: 20px;
+}
+#start{
+    background-color: #fefefe;
+}
+article{
+    scroll-snap-align: center;
+    scroll-snap-type: y mandatory;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+body{
+    width: 100vw;
+    scrollbar-color: hidden;
+    overflow-x: hidden;
+    /* height: 200vh; */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+#date{
+ margin-top: 20vh;
+}
+.gemuese{
+    /* background-color: blue; */
+    z-index: 99;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: none;
+    display: inline;
+}
+.gemuese:hover{
+    cursor:grab;
+}
+#rotebete{
+    top: 0;
+    left: 120px;
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../img/RoteBete_Aug.png");
+    /* background-color: aqua; */
+}
+#moehre{
+    top: 600px;
+    left: 20vw;
+    width: 50vw;
+    height: 20vw;
+    background-image: url("../img/karotte.png");
+}
+#zwiebel{
+    top: 150px;
+    left: 50vw;
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../img/Zwiebel.png");
+}
+
+#titel{
+    height: 200px;
+}
+/* body{
+    cursor: url("../img/star.png"),  auto ;
+} */
+#var2{
+    background-color: black;
+    display: grid;
+    height: 100vh;
+}
+#var2 * h3{
+    color: #fefefe;
+}
+#reservierbtn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    font-family: kica;
+    text-transform: uppercase;
+    font-weight:900;
+    font-size: 2vw;
+    color: white;
+
+    mix-blend-mode:exclusion;
+    /* background-color: black; */
+    border: none;
+    z-index: 9999;
+}
+#reservierbtn:hover{
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.dsgvo{
+    font-family: kica;
+    text-transform: uppercase;
+    font-weight:900;
+    color: #fefefe;
+    font-size: 1vw;
+    display: block;
+    height: fit-content;
+}
+#info{
+    position: relative;
+    left: 20px;
+    height:100%;
+    width: fit-content;
+    display: grid;
+    place-content: bottom;
+    z-index: 999;
+}
+#info > span{
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    h1{
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    
+    #date{
+        font-size: 12vw;
+    }
+    #reservierbtn{
+        font-size: 5vw;
+    }
+    h6{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 5vw;
+    }
+    article{
+        overflow: hidden;
+    }
+
+    #rotebete, #zwiebel{
+        width: 50vw;
+        height: 50vw;
+    }
+    #zwiebel{
+        top: 400px;
+    }
+    #rotebete{
+        left: 40px;
+        top: 120px;
+    }
+    #moehre{
+        width: 90vw;
+        height: 40vw;
+        left: 0px;
+        top: 700px;
+    }
+    .dsgvo{
+        font-size: 10px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 900px){
+    #zwiebel, #rotebete{
+        width: 30vw;
+        height: 30vw;
+    }
+    #moehre{
+        height: 25vw;
+        width: 50vw;
+        top: 300px;
+    }
+    h1, #date{
+        font-size: 6vw;
+        line-height: 1em;
+    }
+    #date{
+        margin-top: 0;
+    }
+    #titel{
+        height: 5vh;
+    }
+    section{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        overflow: hidden;
+        scroll-snap-align: start;
+    }
+
+}
+
