@@ -8,7 +8,7 @@ h1{
     text-transform: uppercase;
     font-weight:900;
     font-size: 5vw;
-    color: black;
+    color: #0a0a0a;
     line-height: 0.5em;
 }
 #titel{
@@ -20,7 +20,7 @@ h3{
     text-transform: uppercase;
     font-weight:900;
     font-size: 4vw;
-    color: black;
+    color: #0a0a0a;
     margin: 20px;
     line-height: 1em;
 }
@@ -38,6 +38,7 @@ h6{
 #start{
     background-color: #fefefe;
 }
+
 article{
     scroll-snap-align: center;
     scroll-snap-type: y mandatory;
@@ -107,7 +108,7 @@ html, body {
     cursor: url("../img/star.png"),  auto ;
 } */
 #var2{
-    background-color: black;
+    background-color: #0a0a0a;
     display: grid;
     height: 100vh;
 }
@@ -235,3 +236,24 @@ html, body {
 
 }
 
+
+#impr{
+    background-color: #0a0a0a;
+}
+
+#impr > *{
+    color: #fefefe;
+    font-family: kica;
+}
+#klammer > p {
+    hyphenate-limit-chars: 60;
+}
+#klammer>h3{
+    color: #fefefe;
+    font-size: 5vw;
+    margin: 0;
+}
+
+#klammer{
+    padding: 20px;
+}
