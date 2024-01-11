@@ -162,6 +162,15 @@ html, body {
     bottom: 20px;
 }
 
+#date{
+    margin-top: 80px;
+}
+
+h6{
+    height: fit-content;
+    white-space:nowrap;
+}
+
 @media screen and (max-width: 900px) {
     h1{
         font-size: 8vw;
@@ -221,6 +230,7 @@ html, body {
         line-height: 1em;
     }
     #date{
+        font-size: 10vw;
         margin-top: 0;
     }
     #titel{
