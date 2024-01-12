@@ -37,7 +37,6 @@ h6{
 }
 #start{
     background-color: #fefefe;
-    height: 98vh;
 }
 
 article{
@@ -45,11 +44,12 @@ article{
     scroll-snap-type: y mandatory;
 }
 section{
-    height: 100vh;
+    height: 98vh;
+    min-height: 500px;
     width: 100vw;
     display: grid;
+    grid-template-rows: 8fr 2fr 2fr;
     overflow: hidden;
-    scroll-snap-align: start;
 }
 body{
     width: 100vw;
@@ -64,9 +64,6 @@ html, body {
     height: 100%;
   }
   
-#date{
- margin-top: 20vh;
-}
 .gemuese{
     /* background-color: blue; */
     z-index: 99;
@@ -143,29 +140,66 @@ html, body {
     font-family: kica;
     text-transform: uppercase;
     font-weight:900;
-    color: #fefefe;
+    color: #0a0a0a;
     font-size: 1vw;
     display: block;
     height: fit-content;
 }
-#info{
+
+
+/* #info, #scrolldown{
     position: relative;
     left: 20px;
-    height:100%;
+    height:98vh;
+    width: 100vw;
     width: fit-content;
     display: grid;
     place-content: bottom;
-    z-index: 999;
 }
-#info > span{
+#info > span, .arrow{
     height: fit-content;
     position: absolute;
+    color: #0a0a0a;
+}
+#info>span{
     bottom: 20px;
+}
+.arrow{
+    transform: rotate(90deg);
+    left: 20px;
+    bottom: 20px;
+    font-size: 15px;
+    mix-blend-mode: normal;
+}
+#arrowtwo{
+    width: fit-content;
+    position: absolute;
+    left: 20px;
+    bottom: -98vh;
+    color: #fefefe;
+} */
+
+.scrolldown{
+    position: relative;
+    bottom: 0;
+    width: fit-content;
+    height: min-content;
+    margin-left: 20px;
+    grid-row: 3 / span 1;
+    /* background-color: aqua; */
+}
+
+.arrow{
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(90deg);
+    mix-blend-mode: exclusion;
 }
 
 #date{
-    margin-top: 150px;
-    margin-bottom: 30px;
+    margin-top: 20vh;
+    /* margin-bottom: 30px; */
+    height: fit-content;
 }
 
 h6{
@@ -174,15 +208,16 @@ h6{
     line-break: auto;
 }
 
-@media screen and (max-width: 900px) {
+#var3{
+    background-color: #fefefe;
+}
+
+@media screen and (max-width: 630px) {
     h1{
         font-size: 8vw;
         line-height: 8vw;
     }
     
-    #date{
-        font-size: 12vw;
-    }
     #reservierbtn{
         font-size: 5vw;
     }
@@ -218,9 +253,13 @@ h6{
     .dsgvo{
         font-size: 10px;
     }
+    #date{
+        margin-top: 20vh;
+
+    }
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px){
+@media screen and (orientation: landscape) and (max-width: 630px){
     #zwiebel, #rotebete{
         width: 30vw;
         height: 30vw;
@@ -230,14 +269,11 @@ h6{
         width: 50vw;
         top: 300px;
     }
-    h1, #date{
+    h1{
         font-size: 6vw;
         line-height: 1em;
     }
-    #date{
-        font-size: 10vw;
-        margin-top: 0;
-    }
+
     #titel{
         height: 5vh;
     }
@@ -252,33 +288,5 @@ h6{
 }
 
 
-.impr{
-    background-color: #0a0a0a;
-}
-
-.impr > *{
-    color: #fefefe;
-    font-family: kica;
-}
-.klammer > p {
-    hyphenate-limit-chars: 60;
-}
-.klammer>h3{
-    color: #fefefe;
-    font-size: 4vw;
-    margin: 0;
-}
-
-.klammer{
-    padding: 20px;
-}
 
 
-#arrow{
-    width: fit-content;
-    height: fit-content;
-    transform: rotate(90deg);
-    position: absolute;
-    left: 20px;
-    bottom: -10px;
-}

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var viewportwidth = window.innerWidth;
                 var elementwidth = element.offsetWidth;
 
-                if (newY + elementheight < viewportheight * 2 && newY > 0 ) {
+                if (newY + elementheight < viewportheight * 2.94 && newY > 0 ) {
                     element.style.top = newY + "px";
                 } else {
                     newY = startTop;
