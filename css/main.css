@@ -164,12 +164,14 @@ html, body {
 }
 
 #date{
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 h6{
     height: fit-content;
-    white-space:nowrap;
+    white-space:normal;
+    line-break: auto;
 }
 
 @media screen and (max-width: 900px) {
@@ -186,6 +188,8 @@ h6{
     }
     h6{
         font-size: 3vw;
+        white-space:normal;
+        line-break: auto;
     }
     h3{
         font-size: 5vw;
@@ -267,4 +271,14 @@ h6{
 
 .klammer{
     padding: 20px;
+}
+
+
+#arrow{
+    width: fit-content;
+    height: fit-content;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
 }
