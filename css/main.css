@@ -2,6 +2,10 @@
     font-family: kica;
     src: url("../font/PERSONAL-USE-Kica-Light.ttf");
 }
+@font-face {
+    font-family: lexend;
+    src: url("../font/Lexend-VariableFont_wght.ttf");
+}
 
 h1{
     font-family: kica;
@@ -45,7 +49,7 @@ article{
 }
 section{
     height: 98vh;
-    min-height: 500px;
+    /* min-height: 800px; */
     width: 100vw;
     display: grid;
     grid-template-rows: 8fr 2fr 2fr;
@@ -132,6 +136,7 @@ html, body {
 #reservierbtn:hover{
     cursor: pointer;
 }
+
 ::-webkit-scrollbar{
     width: 0px;
 }
@@ -185,7 +190,7 @@ html, body {
     width: fit-content;
     height: min-content;
     margin-left: 20px;
-    grid-row: 3 / span 1;
+    grid-row: 4 / span 1;
     /* background-color: aqua; */
 }
 
@@ -194,6 +199,13 @@ html, body {
     height: fit-content;
     transform: rotate(90deg);
     mix-blend-mode: exclusion;
+}
+#info {
+    height: 100%;
+    display: grid;
+    place-content: bottom;
+    bottom: 30px;
+    grid-row: 4 / span 1;
 }
 
 #date{
@@ -211,6 +223,17 @@ h6{
 #var3{
     background-color: #fefefe;
 }
+
+#text{
+    padding: 20px;
+    font-family: lexend;
+    font-size: 2vw;
+}
+#text > #namen{
+    margin-top: 50px;
+    font-size: 1.5vw;
+}
+
 
 @media screen and (max-width: 630px) {
     h1{
@@ -256,6 +279,17 @@ h6{
     #date{
         margin-top: 20vh;
 
+    }
+    #section{
+        height: 100vh;
+        min-height: 500px;
+    }
+
+    #text{
+        font-size: 4vw;
+    }
+    #text > #namen{
+        font-size: 3vw;
     }
 }
 
