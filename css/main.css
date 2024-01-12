@@ -213,7 +213,12 @@ html, body {
     /* margin-bottom: 30px; */
     height: fit-content;
 }
-
+.lexend{
+    font-family: lexend;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 2vw;
+}
 h6{
     height: fit-content;
     white-space:normal;
@@ -285,7 +290,7 @@ h6{
         min-height: 500px;
     }
 
-    #text{
+    .lexend{
         font-size: 4vw;
     }
     #text > #namen{
